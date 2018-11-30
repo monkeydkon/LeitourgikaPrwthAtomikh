@@ -2,7 +2,7 @@ package Leitourgika;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class ArraysMethods {
+public class ArraysMethods{
 
     int N;
     int array[];
@@ -10,7 +10,9 @@ public class ArraysMethods {
     public ArraysMethods(int input){
         N = input;
         array = new int[N];
+        System.out.println("------------------------------------------------------");
         System.out.println("you just made an array of "+String.valueOf(N)+" values");
+        System.out.println("------------------------------------------------------");
     }
 
     public int[] fillArray(int input){

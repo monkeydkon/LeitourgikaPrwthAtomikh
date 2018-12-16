@@ -16,7 +16,7 @@ public class Order extends Thread {
         this.sum = sum;
         this.pro = pro;
         this.random = random;
-        name = threadName;
+        this.name = threadName;
 
         System.out.println(threadName + " created");
         System.out.println("------------------------------------------------------");
@@ -39,7 +39,7 @@ public class Order extends Thread {
                 .sorted((Map.Entry.<String, Integer>comparingByValue().reversed()))
 
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
-        
+
         System.out.println(sorted);
 
     }
